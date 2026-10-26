@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4fff4;
+    text-align: center;
+}
+
+header {
+    background: #287d46;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    padding: 100px 15px;
+    color: white;
+    background: linear-gradient(#0007,#0007),
+    url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400') center/cover;
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+.hero p {
+    margin: 20px;
+}
+
+.btn, button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 40px 15px;
+}
+
+h2 {
+    color: #287d46;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3, .card p {
+    margin: 12px;
+}
+
+button:hover, .btn:hover {
+    background: #e68900;
+}
+
+#plans {
+    background: #e0f5df;
+}
+
+.plan {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2.5;
+}
+
+#tips {
+    line-height: 2.5;
+}
+
+footer {
+    background: #287d46;
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
